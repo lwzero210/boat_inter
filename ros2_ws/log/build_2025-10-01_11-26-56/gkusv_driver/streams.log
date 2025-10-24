@@ -1,0 +1,77 @@
+[1.165s] Invoking command in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver': PYTHONPATH=/home/globalkorea/ros2_ws/build/gkusv_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gkusv_driver build --build-base /home/globalkorea/ros2_ws/build/gkusv_driver/build install --record /home/globalkorea/ros2_ws/build/gkusv_driver/install.log --single-version-externally-managed install_data
+[1.683s] running egg_info
+[1.683s] creating ../../../build/gkusv_driver/gkusv_driver.egg-info
+[1.684s] writing ../../../build/gkusv_driver/gkusv_driver.egg-info/PKG-INFO
+[1.685s] writing dependency_links to ../../../build/gkusv_driver/gkusv_driver.egg-info/dependency_links.txt
+[1.686s] writing entry points to ../../../build/gkusv_driver/gkusv_driver.egg-info/entry_points.txt
+[1.686s] writing requirements to ../../../build/gkusv_driver/gkusv_driver.egg-info/requires.txt
+[1.687s] writing top-level names to ../../../build/gkusv_driver/gkusv_driver.egg-info/top_level.txt
+[1.687s] writing manifest file '../../../build/gkusv_driver/gkusv_driver.egg-info/SOURCES.txt'
+[1.691s] reading manifest file '../../../build/gkusv_driver/gkusv_driver.egg-info/SOURCES.txt'
+[1.693s] writing manifest file '../../../build/gkusv_driver/gkusv_driver.egg-info/SOURCES.txt'
+[1.694s] running build
+[1.694s] running build_py
+[1.694s] creating /home/globalkorea/ros2_ws/build/gkusv_driver/build
+[1.694s] creating /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib
+[1.694s] creating /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.694s] copying gkusv_driver/gkusv_imu_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.695s] copying gkusv_driver/gkusv_data_save_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.696s] copying gkusv_driver/gkusv_camera_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.697s] copying gkusv_driver/gkusv_motor_control_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.697s] copying gkusv_driver/gkusv_compass_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.697s] copying gkusv_driver/gkusv_gps_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.697s] copying gkusv_driver/gkusv_gps_gnss_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.698s] copying gkusv_driver/gkusv_control_ui_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.699s] copying gkusv_driver/__init__.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.699s] copying gkusv_driver/gkusv_water_sensor_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.700s] copying gkusv_driver/gkusv_winch_controller_node.py -> /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver
+[1.701s] running install
+[1.703s] running install_lib
+[1.704s] creating /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.705s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_imu_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.705s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_data_save_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.706s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_camera_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.707s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_motor_control_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.707s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_compass_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.708s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_gps_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.708s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_gps_gnss_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.709s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_control_ui_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.709s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/__init__.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.710s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_water_sensor_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.711s] copying /home/globalkorea/ros2_ws/build/gkusv_driver/build/lib/gkusv_driver/gkusv_winch_controller_node.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver
+[1.712s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_imu_node.py to gkusv_imu_node.cpython-310.pyc
+[1.715s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_data_save_node.py to gkusv_data_save_node.cpython-310.pyc
+[1.718s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_camera_node.py to gkusv_camera_node.cpython-310.pyc
+[1.718s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_motor_control_node.py to gkusv_motor_control_node.cpython-310.pyc
+[1.721s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_compass_node.py to gkusv_compass_node.cpython-310.pyc
+[1.725s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_gps_node.py to gkusv_gps_node.cpython-310.pyc
+[1.726s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_gps_gnss_node.py to gkusv_gps_gnss_node.cpython-310.pyc
+[1.731s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_control_ui_node.py to gkusv_control_ui_node.cpython-310.pyc
+[1.738s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/__init__.py to __init__.cpython-310.pyc
+[1.739s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_water_sensor_node.py to gkusv_water_sensor_node.cpython-310.pyc
+[1.742s] byte-compiling /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver/gkusv_winch_controller_node.py to gkusv_winch_controller_node.cpython-310.pyc
+[1.748s] running install_data
+[1.748s] creating /home/globalkorea/ros2_ws/install/gkusv_driver/share/ament_index
+[1.749s] creating /home/globalkorea/ros2_ws/install/gkusv_driver/share/ament_index/resource_index
+[1.749s] creating /home/globalkorea/ros2_ws/install/gkusv_driver/share/ament_index/resource_index/packages
+[1.749s] copying resource/gkusv_driver -> /home/globalkorea/ros2_ws/install/gkusv_driver/share/ament_index/resource_index/packages
+[1.750s] copying package.xml -> /home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver
+[1.750s] creating /home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/launch
+[1.750s] copying gkusv_driver/launch/gkusv_sensor.launch.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/launch
+[1.750s] copying gkusv_driver/launch/gkusv_control.launch.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/launch
+[1.750s] copying gkusv_driver/launch/gkusv_save.launch.py -> /home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/launch
+[1.750s] running install_egg_info
+[1.753s] Copying ../../../build/gkusv_driver/gkusv_driver.egg-info to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages/gkusv_driver-0.0.0-py3.10.egg-info
+[1.754s] running install_scripts
+[1.791s] Installing driver script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.800s] Installing gkusv_camera_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.800s] Installing gkusv_compass_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.800s] Installing gkusv_control_ui_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.800s] Installing gkusv_data_save_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.801s] Installing gkusv_gps_gnss_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.801s] Installing gkusv_imu_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.801s] Installing gkusv_motor_control_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.801s] Installing gkusv_water_sensor_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.801s] Installing gkusv_winch_controller_node script to /home/globalkorea/ros2_ws/install/gkusv_driver/lib/gkusv_driver
+[1.801s] writing list of installed files to '/home/globalkorea/ros2_ws/build/gkusv_driver/install.log'
+[1.845s] Invoked command in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver' returned '0': PYTHONPATH=/home/globalkorea/ros2_ws/build/gkusv_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gkusv_driver build --build-base /home/globalkorea/ros2_ws/build/gkusv_driver/build install --record /home/globalkorea/ros2_ws/build/gkusv_driver/install.log --single-version-externally-managed install_data

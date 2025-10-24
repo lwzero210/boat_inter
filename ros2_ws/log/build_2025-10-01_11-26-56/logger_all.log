@@ -1,0 +1,613 @@
+[0.151s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.151s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73864cf67070>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73864d0ac070>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73864d0ac070>>, mixin_verb=('build',))
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.420s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.420s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/globalkorea/ros2_ws'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.451s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'ignore'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'ros'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extensions ['cmake', 'python']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'cmake'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'python'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extensions ['python_setup_py']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2) by extension 'python_setup_py'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extension 'colcon_pkg'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extensions ['colcon_meta']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extension 'colcon_meta'
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extensions ['ros']
+[0.454s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver) by extension 'ros'
+[0.458s] DEBUG:colcon.colcon_core.package_identification:Package 'src/globalkorea_usv_ros2/gkusv_driver' with type 'ros.ament_python' and name 'gkusv_driver'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/globalkorea_usv_ros2/gkusv_driver_interface) by extension 'ros'
+[0.459s] DEBUG:colcon.colcon_core.package_identification:Package 'src/globalkorea_usv_ros2/gkusv_driver_interface' with type 'ros.ament_cmake' and name 'gkusv_driver_interface'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_meta'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ros']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ros'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['cmake', 'python']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'cmake'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['python_setup_py']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python_setup_py'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'colcon_pkg'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['colcon_meta']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'colcon_meta'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['ros']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ros'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['cmake', 'python']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'cmake'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'python'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['python_setup_py']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'python_setup_py'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_pkg']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_meta'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ros']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ros'
+[0.463s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_gz' with type 'ros.ament_cmake' and name 'vrx_gz'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ignore_ament_install'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['colcon_pkg']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'colcon_pkg'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['colcon_meta']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'colcon_meta'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['ros']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ros'
+[0.465s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_ros' with type 'ros.ament_cmake' and name 'vrx_ros'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ros'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['cmake', 'python']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'cmake'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'python'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['python_setup_py']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'python_setup_py'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ignore'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ignore_ament_install'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_pkg']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_pkg'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_meta']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_meta'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['ros']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ros'
+[0.468s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/vrx_gazebo' with type 'ros.ament_cmake' and name 'vrx_gazebo'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['ignore', 'ignore_ament_install']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ignore'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ignore_ament_install'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['colcon_pkg']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'colcon_pkg'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['colcon_meta']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'colcon_meta'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['ros']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ros'
+[0.469s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/wamv_description' with type 'ros.ament_cmake' and name 'wamv_description'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ignore'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ignore_ament_install'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_pkg']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_pkg'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_meta']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_meta'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['ros']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ros'
+[0.471s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/wamv_gazebo' with type 'ros.ament_cmake' and name 'wamv_gazebo'
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.501s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/globalkorea/ros2_ws/install/wamv_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/globalkorea/ros2_ws/install/wamv_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/globalkorea/ros2_ws/install/vrx_gz' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/globalkorea/ros2_ws/install/vrx_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/globalkorea/ros2_ws/install/vrx_gazebo' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/globalkorea/ros2_ws/install/gkusv_driver_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/globalkorea/ros2_ws/install/gkusv_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/globalkorea/ros2_ws/install/wamv_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/globalkorea/ros2_ws/install/wamv_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/globalkorea/ros2_ws/install/vrx_gz' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/globalkorea/ros2_ws/install/vrx_ros' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.502s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/globalkorea/ros2_ws/install/vrx_gazebo' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.503s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/globalkorea/ros2_ws/install/gkusv_driver_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.503s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/globalkorea/ros2_ws/install
+[0.505s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/humble
+[0.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'cmake_target' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.569s] DEBUG:colcon.colcon_core.verb:Building package 'gkusv_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/globalkorea/ros2_ws/build/gkusv_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/globalkorea/ros2_ws/install/gkusv_driver', 'merge_install': False, 'path': '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver', 'symlink_install': False, 'test_result_base': None}
+[0.569s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'cmake_args' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'cmake_target' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'gkusv_driver_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.570s] DEBUG:colcon.colcon_core.verb:Building package 'gkusv_driver_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/globalkorea/ros2_ws/build/gkusv_driver_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/globalkorea/ros2_ws/install/gkusv_driver_interface', 'merge_install': False, 'path': '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface', 'symlink_install': False, 'test_result_base': None}
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.570s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.571s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/globalkorea/ros2_ws/build/vrx_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/globalkorea/ros2_ws/install/vrx_gazebo', 'merge_install': False, 'path': '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/vrx_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_args' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_target' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.571s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.571s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/globalkorea/ros2_ws/build/vrx_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/globalkorea/ros2_ws/install/vrx_ros', 'merge_install': False, 'path': '/home/globalkorea/ros2_ws/src/vrx/vrx_ros', 'symlink_install': False, 'test_result_base': None}
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_args' from command line to 'None'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target' from command line to 'None'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.572s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/globalkorea/ros2_ws/build/vrx_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/globalkorea/ros2_ws/install/vrx_gz', 'merge_install': False, 'path': '/home/globalkorea/ros2_ws/src/vrx/vrx_gz', 'symlink_install': False, 'test_result_base': None}
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_target' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.573s] DEBUG:colcon.colcon_core.verb:Building package 'wamv_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/globalkorea/ros2_ws/build/wamv_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/globalkorea/ros2_ws/install/wamv_description', 'merge_install': False, 'path': '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_description', 'symlink_install': False, 'test_result_base': None}
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.574s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.574s] DEBUG:colcon.colcon_core.verb:Building package 'wamv_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/globalkorea/ros2_ws/build/wamv_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/globalkorea/ros2_ws/install/wamv_gazebo', 'merge_install': False, 'path': '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.574s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.575s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.576s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/vrx_gazebo' with build type 'ament_cmake'
+[0.576s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/vrx_gazebo'
+[0.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.583s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/globalkorea/ros2_ws/src/vrx/vrx_ros' with build type 'ament_cmake'
+[0.584s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/globalkorea/ros2_ws/src/vrx/vrx_ros'
+[0.584s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.584s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.589s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver' with build type 'ament_python'
+[0.589s] Level 1:colcon.colcon_core.shell:create_environment_hook('gkusv_driver', 'ament_prefix_path')
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/hook/ament_prefix_path.ps1'
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/hook/ament_prefix_path.dsv'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/hook/ament_prefix_path.sh'
+[0.593s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.593s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.596s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface' with build type 'ament_cmake'
+[0.597s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface'
+[0.597s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.597s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_gazebo
+[0.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_ros -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_ros
+[1.048s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver'
+[1.048s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.049s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.065s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/gkusv_driver_interface
+[1.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver': PYTHONPATH=/home/globalkorea/ros2_ws/build/gkusv_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gkusv_driver build --build-base /home/globalkorea/ros2_ws/build/gkusv_driver/build install --record /home/globalkorea/ros2_ws/build/gkusv_driver/install.log --single-version-externally-managed install_data
+[2.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_gazebo
+[2.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_gazebo -- -j4 -l4
+[2.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver' returned '0': PYTHONPATH=/home/globalkorea/ros2_ws/build/gkusv_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gkusv_driver build --build-base /home/globalkorea/ros2_ws/build/gkusv_driver/build install --record /home/globalkorea/ros2_ws/build/gkusv_driver/install.log --single-version-externally-managed install_data
+[2.446s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver' for CMake module files
+[2.446s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver' for CMake config files
+[2.448s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver/lib'
+[2.448s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver/bin'
+[2.448s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver/lib/pkgconfig/gkusv_driver.pc'
+[2.449s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver/lib/python3.10/site-packages'
+[2.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('gkusv_driver', 'pythonpath')
+[2.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/hook/pythonpath.ps1'
+[2.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/hook/pythonpath.dsv'
+[2.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/hook/pythonpath.sh'
+[2.452s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver/bin'
+[2.452s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gkusv_driver)
+[2.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/package.ps1'
+[2.455s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/package.dsv'
+[2.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/package.sh'
+[2.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/package.bash'
+[2.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver/share/gkusv_driver/package.zsh'
+[2.461s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/gkusv_driver/share/colcon-core/packages/gkusv_driver)
+[2.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_gazebo -- -j4 -l4
+[2.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_gazebo
+[3.213s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gazebo)
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo' for CMake module files
+[3.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_gazebo
+[3.214s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo' for CMake config files
+[3.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gazebo', 'cmake_prefix_path')
+[3.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/hook/cmake_prefix_path.ps1'
+[3.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/hook/cmake_prefix_path.dsv'
+[3.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/hook/cmake_prefix_path.sh'
+[3.218s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/lib'
+[3.218s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/bin'
+[3.218s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/lib/pkgconfig/vrx_gazebo.pc'
+[3.218s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/lib/python3.10/site-packages'
+[3.219s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/bin'
+[3.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.ps1'
+[3.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.dsv'
+[3.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.sh'
+[3.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.bash'
+[3.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.zsh'
+[3.223s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/vrx_gazebo/share/colcon-core/packages/vrx_gazebo)
+[3.224s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gazebo)
+[3.224s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo' for CMake module files
+[3.225s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo' for CMake config files
+[3.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gazebo', 'cmake_prefix_path')
+[3.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/hook/cmake_prefix_path.ps1'
+[3.227s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/hook/cmake_prefix_path.dsv'
+[3.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/hook/cmake_prefix_path.sh'
+[3.228s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/lib'
+[3.229s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/bin'
+[3.229s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/lib/pkgconfig/vrx_gazebo.pc'
+[3.229s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/lib/python3.10/site-packages'
+[3.229s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gazebo/bin'
+[3.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.ps1'
+[3.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.dsv'
+[3.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.sh'
+[3.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.bash'
+[3.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gazebo/share/vrx_gazebo/package.zsh'
+[3.234s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/vrx_gazebo/share/colcon-core/packages/vrx_gazebo)
+[3.235s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_description' with build type 'ament_cmake'
+[3.235s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_description'
+[3.235s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.235s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/wamv_description': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_description -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/wamv_description
+[4.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_description -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/wamv_description
+[4.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/wamv_description': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/wamv_description -- -j4 -l4
+[4.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/wamv_description -- -j4 -l4
+[4.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/wamv_description': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/wamv_description
+[4.759s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_description)
+[4.759s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description' for CMake module files
+[4.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/wamv_description
+[4.760s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description' for CMake config files
+[4.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_description', 'cmake_prefix_path')
+[4.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/hook/cmake_prefix_path.ps1'
+[4.762s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/hook/cmake_prefix_path.dsv'
+[4.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/hook/cmake_prefix_path.sh'
+[4.763s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/bin'
+[4.764s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/lib/pkgconfig/wamv_description.pc'
+[4.764s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/lib/python3.10/site-packages'
+[4.764s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/bin'
+[4.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.ps1'
+[4.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.dsv'
+[4.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.sh'
+[4.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.bash'
+[4.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.zsh'
+[4.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/wamv_description/share/colcon-core/packages/wamv_description)
+[4.769s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_description)
+[4.769s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description' for CMake module files
+[4.770s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description' for CMake config files
+[4.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_description', 'cmake_prefix_path')
+[4.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/hook/cmake_prefix_path.ps1'
+[4.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/hook/cmake_prefix_path.dsv'
+[4.772s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/hook/cmake_prefix_path.sh'
+[4.773s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/bin'
+[4.773s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/lib/pkgconfig/wamv_description.pc'
+[4.773s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/lib/python3.10/site-packages'
+[4.774s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_description/bin'
+[4.774s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.ps1'
+[4.775s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.dsv'
+[4.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.sh'
+[4.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.bash'
+[4.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_description/share/wamv_description/package.zsh'
+[4.778s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/wamv_description/share/colcon-core/packages/wamv_description)
+[4.779s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_gazebo' with build type 'ament_cmake'
+[4.779s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_gazebo'
+[4.779s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.780s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/gkusv_driver_interface
+[4.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/gkusv_driver_interface -- -j4 -l4
+[4.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_gazebo -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/wamv_gazebo
+[4.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_ros -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_ros
+[4.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_ros -- -j4 -l4
+[6.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_urdf/wamv_gazebo -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/wamv_gazebo
+[6.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/wamv_gazebo -- -j4 -l4
+[6.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/wamv_gazebo -- -j4 -l4
+[6.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/wamv_gazebo
+[6.171s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_gazebo)
+[6.172s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble GZ_SIM_RESOURCE_PATH=/home/globalkorea/ros2_ws/install/vrx_gazebo/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/wamv_gazebo
+[6.172s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo' for CMake module files
+[6.174s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo' for CMake config files
+[6.174s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_gazebo', 'cmake_prefix_path')
+[6.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/hook/cmake_prefix_path.ps1'
+[6.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/hook/cmake_prefix_path.dsv'
+[6.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/hook/cmake_prefix_path.sh'
+[6.177s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/bin'
+[6.177s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/lib/pkgconfig/wamv_gazebo.pc'
+[6.178s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/lib/python3.10/site-packages'
+[6.178s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/bin'
+[6.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.ps1'
+[6.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.dsv'
+[6.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.sh'
+[6.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.bash'
+[6.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.zsh'
+[6.183s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/wamv_gazebo/share/colcon-core/packages/wamv_gazebo)
+[6.184s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_gazebo)
+[6.185s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo' for CMake module files
+[6.186s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo' for CMake config files
+[6.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_gazebo', 'cmake_prefix_path')
+[6.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/hook/cmake_prefix_path.ps1'
+[6.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/hook/cmake_prefix_path.dsv'
+[6.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/hook/cmake_prefix_path.sh'
+[6.189s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/bin'
+[6.189s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/lib/pkgconfig/wamv_gazebo.pc'
+[6.190s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/lib/python3.10/site-packages'
+[6.190s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/wamv_gazebo/bin'
+[6.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.ps1'
+[6.192s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.dsv'
+[6.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.sh'
+[6.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.bash'
+[6.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/wamv_gazebo/share/wamv_gazebo/package.zsh'
+[6.196s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/wamv_gazebo/share/colcon-core/packages/wamv_gazebo)
+[21.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/gkusv_driver_interface -- -j4 -l4
+[21.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/gkusv_driver_interface
+[21.597s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gkusv_driver_interface)
+[21.598s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface' for CMake module files
+[21.599s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/gkusv_driver_interface
+[21.600s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface' for CMake config files
+[21.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('gkusv_driver_interface', 'cmake_prefix_path')
+[21.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/cmake_prefix_path.ps1'
+[21.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/cmake_prefix_path.dsv'
+[21.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/cmake_prefix_path.sh'
+[21.606s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib'
+[21.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('gkusv_driver_interface', 'ld_library_path_lib')
+[21.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/ld_library_path_lib.ps1'
+[21.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/ld_library_path_lib.dsv'
+[21.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/ld_library_path_lib.sh'
+[21.611s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/bin'
+[21.611s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/pkgconfig/gkusv_driver_interface.pc'
+[21.611s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/python3.10/site-packages'
+[21.612s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/bin'
+[21.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.ps1'
+[21.614s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.dsv'
+[21.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.sh'
+[21.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.bash'
+[21.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.zsh'
+[21.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/colcon-core/packages/gkusv_driver_interface)
+[21.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gkusv_driver_interface)
+[21.620s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface' for CMake module files
+[21.621s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface' for CMake config files
+[21.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('gkusv_driver_interface', 'cmake_prefix_path')
+[21.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/cmake_prefix_path.ps1'
+[21.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/cmake_prefix_path.dsv'
+[21.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/cmake_prefix_path.sh'
+[21.626s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib'
+[21.626s] Level 1:colcon.colcon_core.shell:create_environment_hook('gkusv_driver_interface', 'ld_library_path_lib')
+[21.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/ld_library_path_lib.ps1'
+[21.627s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/ld_library_path_lib.dsv'
+[21.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/hook/ld_library_path_lib.sh'
+[21.629s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/bin'
+[21.629s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/pkgconfig/gkusv_driver_interface.pc'
+[21.630s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/python3.10/site-packages'
+[21.630s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/bin'
+[21.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.ps1'
+[21.632s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.dsv'
+[21.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.sh'
+[21.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.bash'
+[21.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.zsh'
+[21.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/colcon-core/packages/gkusv_driver_interface)
+[31.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_ros -- -j4 -l4
+[31.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_ros
+[31.559s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_ros)
+[31.560s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros' for CMake module files
+[31.560s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_ros
+[31.561s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros' for CMake config files
+[31.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_ros', 'cmake_prefix_path')
+[31.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/hook/cmake_prefix_path.ps1'
+[31.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/hook/cmake_prefix_path.dsv'
+[31.562s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/hook/cmake_prefix_path.sh'
+[31.563s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/lib'
+[31.563s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/bin'
+[31.563s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/lib/pkgconfig/vrx_ros.pc'
+[31.564s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/lib/python3.10/site-packages'
+[31.564s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/bin'
+[31.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.ps1'
+[31.565s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.dsv'
+[31.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.sh'
+[31.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.bash'
+[31.566s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.zsh'
+[31.567s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/vrx_ros/share/colcon-core/packages/vrx_ros)
+[31.568s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_ros)
+[31.568s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros' for CMake module files
+[31.569s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros' for CMake config files
+[31.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_ros', 'cmake_prefix_path')
+[31.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/hook/cmake_prefix_path.ps1'
+[31.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/hook/cmake_prefix_path.dsv'
+[31.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/hook/cmake_prefix_path.sh'
+[31.571s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/lib'
+[31.571s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/bin'
+[31.571s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/lib/pkgconfig/vrx_ros.pc'
+[31.572s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/lib/python3.10/site-packages'
+[31.572s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_ros/bin'
+[31.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.ps1'
+[31.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.dsv'
+[31.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.sh'
+[31.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.bash'
+[31.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.zsh'
+[31.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/vrx_ros/share/colcon-core/packages/vrx_ros)
+[31.576s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/globalkorea/ros2_ws/src/vrx/vrx_gz' with build type 'ament_cmake'
+[31.576s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/globalkorea/ros2_ws/src/vrx/vrx_gz'
+[31.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[31.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[31.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_gz': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_gz -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_gz
+[34.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_gz -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_gz
+[34.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_gz': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_gz -- -j4 -l4
+[119.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_gz -- -j4 -l4
+[119.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/globalkorea/ros2_ws/build/vrx_gz': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_gz
+[120.953s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[120.953s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz' for CMake module files
+[120.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/globalkorea/ros2_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=/home/globalkorea/ros2_ws/install/vrx_ros:/home/globalkorea/ros2_ws/install/wamv_gazebo:/home/globalkorea/ros2_ws/install/wamv_description:/home/globalkorea/ros2_ws/install/vrx_gz:/home/globalkorea/ros2_ws/install/vrx_gazebo:/home/globalkorea/ros2_ws/install/gkusv_driver_interface:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_gz
+[120.954s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz' for CMake config files
+[120.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[120.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[120.958s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[120.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.sh'
+[120.959s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/lib'
+[120.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[120.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[120.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[120.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.sh'
+[120.960s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/bin'
+[120.961s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/lib/pkgconfig/vrx_gz.pc'
+[120.961s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/lib/python3.10/site-packages'
+[120.961s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/bin'
+[120.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.ps1'
+[120.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.dsv'
+[120.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.sh'
+[120.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.bash'
+[120.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.zsh'
+[120.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/vrx_gz/share/colcon-core/packages/vrx_gz)
+[120.965s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[120.966s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz' for CMake module files
+[120.966s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz' for CMake config files
+[120.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[120.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[120.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[120.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/cmake_prefix_path.sh'
+[120.971s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/lib'
+[120.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[120.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[120.972s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[120.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/hook/ld_library_path_lib.sh'
+[120.973s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/bin'
+[120.973s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/lib/pkgconfig/vrx_gz.pc'
+[120.974s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/lib/python3.10/site-packages'
+[120.974s] Level 1:colcon.colcon_core.environment:checking '/home/globalkorea/ros2_ws/install/vrx_gz/bin'
+[120.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.ps1'
+[120.975s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.dsv'
+[120.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.sh'
+[120.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.bash'
+[120.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/globalkorea/ros2_ws/install/vrx_gz/share/vrx_gz/package.zsh'
+[120.978s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/globalkorea/ros2_ws/install/vrx_gz/share/colcon-core/packages/vrx_gz)
+[120.978s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[120.979s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[120.979s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[120.979s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[120.986s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[120.987s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[120.987s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[121.003s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[121.004s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/install/local_setup.ps1'
+[121.006s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/globalkorea/ros2_ws/install/_local_setup_util_ps1.py'
+[121.008s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/install/setup.ps1'
+[121.011s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/install/local_setup.sh'
+[121.012s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/globalkorea/ros2_ws/install/_local_setup_util_sh.py'
+[121.014s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/install/setup.sh'
+[121.016s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/install/local_setup.bash'
+[121.017s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/install/setup.bash'
+[121.018s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/install/local_setup.zsh'
+[121.019s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/install/setup.zsh'

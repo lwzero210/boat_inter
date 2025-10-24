@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from gkusv_driver_interface/msg/UsvCompass.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module gkusv_driver_interface {
+  module msg {
+    struct UsvCompass {
+      std_msgs::msg::Header header;
+
+      float heading;
+    };
+  };
+};

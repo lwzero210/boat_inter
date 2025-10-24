@@ -1,0 +1,418 @@
+[0.468s] Invoking command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/gkusv_driver_interface
+[0.553s] -- The C compiler identification is GNU 11.4.0
+[0.647s] -- The CXX compiler identification is GNU 11.4.0
+[0.664s] -- Detecting C compiler ABI info
+[0.775s] -- Detecting C compiler ABI info - done
+[0.786s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.786s] -- Detecting C compile features
+[0.787s] -- Detecting C compile features - done
+[0.792s] -- Detecting CXX compiler ABI info
+[0.929s] -- Detecting CXX compiler ABI info - done
+[0.945s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.945s] -- Detecting CXX compile features
+[0.947s] -- Detecting CXX compile features - done
+[0.951s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.248s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.416s] -- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)
+[1.418s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.477s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.488s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.501s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.528s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.562s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.798s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.001s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.015s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.611s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.467s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.789s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.827s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.829s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.871s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.871s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.871s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.871s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.905s] -- Found PythonExtra: .so  
+[4.036s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.041s] -- Added test 'lint_cmake' to check CMake code style
+[4.042s] -- Added test 'xmllint' to check XML markup files
+[4.049s] -- Configuring done
+[4.125s] -- Generating done
+[4.144s] -- Build files have been written to: /home/globalkorea/ros2_ws/build/gkusv_driver_interface
+[4.189s] Invoked command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/gkusv_driver_interface
+[4.191s] Invoking command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/gkusv_driver_interface -- -j4 -l4
+[4.276s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.277s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.310s] [  2%] Built target ament_cmake_python_copy_gkusv_driver_interface
+[4.891s] running egg_info
+[4.897s] creating gkusv_driver_interface.egg-info
+[4.897s] writing gkusv_driver_interface.egg-info/PKG-INFO
+[4.898s] writing dependency_links to gkusv_driver_interface.egg-info/dependency_links.txt
+[4.898s] writing top-level names to gkusv_driver_interface.egg-info/top_level.txt
+[4.898s] writing manifest file 'gkusv_driver_interface.egg-info/SOURCES.txt'
+[4.898s] reading manifest file 'gkusv_driver_interface.egg-info/SOURCES.txt'
+[4.899s] writing manifest file 'gkusv_driver_interface.egg-info/SOURCES.txt'
+[4.965s] [  2%] Built target ament_cmake_python_build_gkusv_driver_interface_egg
+[6.055s] [  2%] Built target gkusv_driver_interface__cpp
+[6.080s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.090s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.091s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.107s] [  7%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_c.dir/rosidl_generator_c/gkusv_driver_interface/msg/detail/usv_camera__functions.c.o[0m
+[6.313s] [  8%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_c.dir/rosidl_generator_c/gkusv_driver_interface/msg/detail/usv_control__functions.c.o[0m
+[6.494s] [ 10%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_c.dir/rosidl_generator_c/gkusv_driver_interface/msg/detail/usv_compass__functions.c.o[0m
+[6.608s] [ 11%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_c.dir/rosidl_generator_c/gkusv_driver_interface/msg/detail/usv_imu__functions.c.o[0m
+[6.763s] [ 12%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_c.dir/rosidl_generator_c/gkusv_driver_interface/msg/detail/usv_gps__functions.c.o[0m
+[6.848s] [ 13%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_c.dir/rosidl_generator_c/gkusv_driver_interface/msg/detail/usv_water_sensor__functions.c.o[0m
+[6.935s] [ 15%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_c.dir/rosidl_generator_c/gkusv_driver_interface/srv/detail/set__functions.c.o[0m
+[7.036s] [ 16%] [32m[1mLinking C shared library libgkusv_driver_interface__rosidl_generator_c.so[0m
+[7.155s] [ 16%] Built target gkusv_driver_interface__rosidl_generator_c
+[7.173s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.347s] [ 18%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkusv_driver_interface/msg/usv_camera__type_support.cpp.o[0m
+[7.738s] [ 20%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkusv_driver_interface/msg/detail/usv_camera__type_support.cpp.o[0m
+[8.354s] [ 21%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkusv_driver_interface/msg/detail/dds_fastrtps/usv_camera__type_support.cpp.o[0m
+[8.462s] [ 22%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkusv_driver_interface/msg/usv_control__type_support.cpp.o[0m
+[8.929s] [ 24%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkusv_driver_interface/msg/detail/usv_control__type_support.cpp.o[0m
+[9.153s] [ 25%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkusv_driver_interface/msg/usv_compass__type_support.cpp.o[0m
+[9.807s] [ 26%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_camera__type_support_c.cpp.o[0m
+[10.043s] [ 27%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkusv_driver_interface/msg/detail/dds_fastrtps/usv_control__type_support.cpp.o[0m
+[10.217s] [ 29%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkusv_driver_interface/msg/usv_imu__type_support.cpp.o[0m
+[10.318s] [ 30%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkusv_driver_interface/msg/detail/usv_compass__type_support.cpp.o[0m
+[11.004s] [ 31%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_control__type_support_c.cpp.o[0m
+[11.152s] [ 32%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkusv_driver_interface/msg/usv_gps__type_support.cpp.o[0m
+[11.242s] [ 34%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkusv_driver_interface/msg/detail/dds_fastrtps/usv_compass__type_support.cpp.o[0m
+[11.284s] [ 35%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkusv_driver_interface/msg/detail/usv_imu__type_support.cpp.o[0m
+[11.662s] [ 36%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkusv_driver_interface/msg/usv_water_sensor__type_support.cpp.o[0m
+[11.944s] [ 37%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_compass__type_support_c.cpp.o[0m
+[12.211s] [ 39%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkusv_driver_interface/msg/detail/usv_gps__type_support.cpp.o[0m
+[12.305s] [ 40%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/gkusv_driver_interface/srv/set__type_support.cpp.o[0m
+[12.453s] [ 41%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkusv_driver_interface/msg/detail/dds_fastrtps/usv_imu__type_support.cpp.o[0m
+[12.962s] [ 43%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support.cpp.o[0m
+[12.962s] [ 44%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_imu__type_support_c.cpp.o[0m
+[13.097s] [ 45%] [32m[1mLinking CXX shared library libgkusv_driver_interface__rosidl_typesupport_cpp.so[0m
+[13.266s] [ 45%] Built target gkusv_driver_interface__rosidl_typesupport_cpp
+[13.301s] [ 46%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.383s] [ 48%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkusv_driver_interface/msg/detail/dds_fastrtps/usv_gps__type_support.cpp.o[0m
+[13.697s] [ 49%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_gps__type_support_c.cpp.o[0m
+[14.374s] [ 50%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/gkusv_driver_interface/srv/detail/set__type_support.cpp.o[0m
+[14.391s] [ 51%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support_c.cpp.o[0m
+[14.584s] [ 53%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkusv_driver_interface/msg/detail/dds_fastrtps/usv_water_sensor__type_support.cpp.o[0m
+[15.262s] [ 54%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/srv/detail/set__type_support_c.cpp.o[0m
+[15.359s] [ 55%] [32m[1mLinking CXX shared library libgkusv_driver_interface__rosidl_typesupport_introspection_cpp.so[0m
+[15.452s] [ 56%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkusv_driver_interface/msg/detail/usv_camera__type_support.c.o[0m
+[15.598s] [ 58%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkusv_driver_interface/msg/detail/usv_control__type_support.c.o[0m
+[15.669s] [ 58%] Built target gkusv_driver_interface__rosidl_typesupport_introspection_cpp
+[15.689s] [ 59%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkusv_driver_interface/msg/detail/usv_compass__type_support.c.o[0m
+[15.711s] [ 62%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.711s] [ 62%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/gkusv_driver_interface/srv/detail/dds_fastrtps/set__type_support.cpp.o[0m
+[15.810s] [ 63%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkusv_driver_interface/msg/detail/usv_imu__type_support.c.o[0m
+[15.931s] [ 64%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkusv_driver_interface/msg/detail/usv_gps__type_support.c.o[0m
+[16.064s] [ 65%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support.c.o[0m
+[16.187s] [ 67%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/gkusv_driver_interface/srv/detail/set__type_support.c.o[0m
+[16.319s] [ 68%] [32m[1mLinking C shared library libgkusv_driver_interface__rosidl_typesupport_introspection_c.so[0m
+[16.323s] [ 69%] [32m[1mLinking CXX shared library libgkusv_driver_interface__rosidl_typesupport_fastrtps_c.so[0m
+[16.453s] [ 69%] Built target gkusv_driver_interface__rosidl_typesupport_introspection_c
+[16.649s] [ 69%] Built target gkusv_driver_interface__rosidl_typesupport_fastrtps_c
+[16.847s] [ 70%] [32m[1mLinking CXX shared library libgkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[17.011s] [ 70%] Built target gkusv_driver_interface__rosidl_typesupport_fastrtps_cpp
+[17.083s] [ 72%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkusv_driver_interface/msg/usv_compass__type_support.cpp.o[0m
+[17.095s] [ 75%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkusv_driver_interface/msg/usv_imu__type_support.cpp.o[0m
+[17.095s] [ 73%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkusv_driver_interface/msg/usv_camera__type_support.cpp.o[0m
+[17.100s] [ 75%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkusv_driver_interface/msg/usv_control__type_support.cpp.o[0m
+[17.180s] [ 77%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkusv_driver_interface/msg/usv_gps__type_support.cpp.o[0m
+[17.193s] [ 78%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkusv_driver_interface/msg/usv_water_sensor__type_support.cpp.o[0m
+[17.200s] [ 79%] [32mBuilding CXX object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/gkusv_driver_interface/srv/set__type_support.cpp.o[0m
+[17.264s] [ 81%] [32m[1mLinking CXX shared library libgkusv_driver_interface__rosidl_typesupport_c.so[0m
+[17.329s] [ 81%] Built target gkusv_driver_interface__rosidl_typesupport_c
+[17.358s] [ 81%] Built target gkusv_driver_interface
+[17.390s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[19.459s] [ 82%] Built target gkusv_driver_interface__py
+[19.493s] [ 84%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_py.dir/rosidl_generator_py/gkusv_driver_interface/msg/_usv_camera_s.c.o[0m
+[19.497s] [ 84%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_py.dir/rosidl_generator_py/gkusv_driver_interface/msg/_usv_control_s.c.o[0m
+[19.514s] [ 86%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_py.dir/rosidl_generator_py/gkusv_driver_interface/msg/_usv_compass_s.c.o[0m
+[19.515s] [ 87%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_py.dir/rosidl_generator_py/gkusv_driver_interface/msg/_usv_imu_s.c.o[0m
+[19.909s] [ 88%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_py.dir/rosidl_generator_py/gkusv_driver_interface/msg/_usv_gps_s.c.o[0m
+[19.932s] [ 89%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_py.dir/rosidl_generator_py/gkusv_driver_interface/msg/_usv_water_sensor_s.c.o[0m
+[19.934s] [ 91%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_generator_py.dir/rosidl_generator_py/gkusv_driver_interface/srv/_set_s.c.o[0m
+[20.222s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/gkusv_driver_interface/libgkusv_driver_interface__rosidl_generator_py.so[0m
+[20.296s] [ 92%] Built target gkusv_driver_interface__rosidl_generator_py
+[20.338s] [ 93%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/gkusv_driver_interface/_gkusv_driver_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[20.345s] [ 94%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/gkusv_driver_interface/_gkusv_driver_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[20.362s] [ 96%] [32mBuilding C object CMakeFiles/gkusv_driver_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/gkusv_driver_interface/_gkusv_driver_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[20.620s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[20.621s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[20.716s] [100%] [32m[1mLinking C shared library rosidl_generator_py/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[20.728s] [100%] Built target gkusv_driver_interface__rosidl_typesupport_fastrtps_c__pyext
+[20.759s] [100%] Built target gkusv_driver_interface__rosidl_typesupport_c__pyext
+[20.793s] [100%] Built target gkusv_driver_interface__rosidl_typesupport_introspection_c__pyext
+[20.814s] Invoked command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/gkusv_driver_interface -- -j4 -l4
+[20.815s] Invoking command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/gkusv_driver_interface
+[20.829s] -- Install configuration: ""
+[20.830s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/ament_index/resource_index/rosidl_interfaces/gkusv_driver_interface
+[20.831s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface
+[20.832s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv
+[20.834s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/set.h
+[20.834s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail
+[20.834s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__functions.c
+[20.834s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__functions.h
+[20.835s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__struct.h
+[20.835s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__type_support.h
+[20.835s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg
+[20.835s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_control.h
+[20.835s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/rosidl_generator_c__visibility_control.h
+[20.836s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_water_sensor.h
+[20.836s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail
+[20.837s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__functions.c
+[20.840s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__type_support.h
+[20.840s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__type_support.h
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__functions.h
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__functions.c
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__struct.h
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__type_support.h
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__functions.c
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support.h
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__struct.h
+[20.841s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__functions.c
+[20.842s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__functions.h
+[20.842s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__functions.h
+[20.842s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__functions.c
+[20.842s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__struct.h
+[20.842s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__struct.h
+[20.842s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__struct.h
+[20.842s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__struct.h
+[20.843s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__type_support.h
+[20.843s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__functions.c
+[20.844s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__functions.h
+[20.846s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__functions.h
+[20.846s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__functions.h
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__type_support.h
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_gps.h
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_compass.h
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_imu.h
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_camera.h
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/library_path.sh
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/library_path.dsv
+[20.847s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_generator_c.so
+[20.849s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_generator_c.so" to ""
+[20.849s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface
+[20.849s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv
+[20.851s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail
+[20.851s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__rosidl_typesupport_fastrtps_c.h
+[20.852s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg
+[20.852s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail
+[20.852s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__rosidl_typesupport_fastrtps_c.h
+[20.852s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__rosidl_typesupport_fastrtps_c.h
+[20.852s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__rosidl_typesupport_fastrtps_c.h
+[20.852s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__rosidl_typesupport_fastrtps_c.h
+[20.852s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__rosidl_typesupport_fastrtps_c.h
+[20.853s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__rosidl_typesupport_fastrtps_c.h
+[20.853s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[20.853s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_fastrtps_c.so
+[20.857s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[20.857s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface
+[20.857s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv
+[20.857s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail
+[20.857s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__traits.hpp
+[20.857s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__builder.hpp
+[20.857s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__struct.hpp
+[20.857s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/set.hpp
+[20.858s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg
+[20.858s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_camera.hpp
+[20.858s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail
+[20.858s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__builder.hpp
+[20.858s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__struct.hpp
+[20.858s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__struct.hpp
+[20.858s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__struct.hpp
+[20.859s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__traits.hpp
+[20.859s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__builder.hpp
+[20.859s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__traits.hpp
+[20.859s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__traits.hpp
+[20.859s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__struct.hpp
+[20.859s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__builder.hpp
+[20.860s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__builder.hpp
+[20.860s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__traits.hpp
+[20.860s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__traits.hpp
+[20.860s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__builder.hpp
+[20.860s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__struct.hpp
+[20.860s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__traits.hpp
+[20.861s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__builder.hpp
+[20.861s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__struct.hpp
+[20.861s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_imu.hpp
+[20.862s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_gps.hpp
+[20.862s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_control.hpp
+[20.862s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_water_sensor.hpp
+[20.862s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/usv_compass.hpp
+[20.862s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface
+[20.863s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv
+[20.863s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail
+[20.863s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__rosidl_typesupport_fastrtps_cpp.hpp
+[20.863s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/dds_fastrtps
+[20.864s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg
+[20.864s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[20.864s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail
+[20.864s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__rosidl_typesupport_fastrtps_cpp.hpp
+[20.864s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__rosidl_typesupport_fastrtps_cpp.hpp
+[20.864s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__rosidl_typesupport_fastrtps_cpp.hpp
+[20.865s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__rosidl_typesupport_fastrtps_cpp.hpp
+[20.865s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__rosidl_typesupport_fastrtps_cpp.hpp
+[20.865s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__rosidl_typesupport_fastrtps_cpp.hpp
+[20.865s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/dds_fastrtps
+[20.865s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.so
+[20.866s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[20.866s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface
+[20.866s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv
+[20.866s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail
+[20.866s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__rosidl_typesupport_introspection_c.h
+[20.867s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__type_support.c
+[20.867s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg
+[20.867s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail
+[20.867s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support.c
+[20.867s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__rosidl_typesupport_introspection_c.h
+[20.868s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__rosidl_typesupport_introspection_c.h
+[20.868s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__type_support.c
+[20.868s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__rosidl_typesupport_introspection_c.h
+[20.868s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__rosidl_typesupport_introspection_c.h
+[20.869s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__type_support.c
+[20.869s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__type_support.c
+[20.869s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__rosidl_typesupport_introspection_c.h
+[20.869s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__type_support.c
+[20.869s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__rosidl_typesupport_introspection_c.h
+[20.869s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__type_support.c
+[20.870s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[20.870s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_introspection_c.so
+[20.870s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_introspection_c.so" to ""
+[20.870s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_c.so
+[20.871s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_c.so" to ""
+[20.871s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface
+[20.871s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv
+[20.871s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail
+[20.871s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__rosidl_typesupport_introspection_cpp.hpp
+[20.872s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/srv/detail/set__type_support.cpp
+[20.872s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg
+[20.872s] -- Up-to-date: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail
+[20.872s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__rosidl_typesupport_introspection_cpp.hpp
+[20.872s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__rosidl_typesupport_introspection_cpp.hpp
+[20.873s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support.cpp
+[20.873s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__rosidl_typesupport_introspection_cpp.hpp
+[20.873s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_control__type_support.cpp
+[20.873s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__rosidl_typesupport_introspection_cpp.hpp
+[20.873s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_compass__type_support.cpp
+[20.874s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_imu__type_support.cpp
+[20.874s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__rosidl_typesupport_introspection_cpp.hpp
+[20.874s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_gps__type_support.cpp
+[20.874s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_water_sensor__rosidl_typesupport_introspection_cpp.hpp
+[20.874s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/include/gkusv_driver_interface/gkusv_driver_interface/msg/detail/usv_camera__type_support.cpp
+[20.875s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_introspection_cpp.so
+[20.875s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[20.875s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_cpp.so
+[20.876s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_typesupport_cpp.so" to ""
+[20.876s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/pythonpath.sh
+[20.876s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/pythonpath.dsv
+[20.877s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface-0.0.0-py3.10.egg-info
+[20.877s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[20.878s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[20.878s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface-0.0.0-py3.10.egg-info/top_level.txt
+[20.878s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[20.878s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface
+[20.878s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/_gkusv_driver_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[20.879s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/_gkusv_driver_interface_s.ep.rosidl_typesupport_introspection_c.c
+[20.879s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/srv
+[20.879s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/srv/_set_s.c
+[20.879s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/srv/_set.py
+[20.880s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/srv/__init__.py
+[20.880s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg
+[20.880s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_camera.py
+[20.880s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_gps.py
+[20.880s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_gps_s.c
+[20.881s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_camera_s.c
+[20.881s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_water_sensor.py
+[20.881s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_control_s.c
+[20.881s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_compass.py
+[20.882s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_water_sensor_s.c
+[20.882s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_compass_s.c
+[20.882s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_imu_s.c
+[20.882s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/__init__.py
+[20.882s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_control.py
+[20.883s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_imu.py
+[20.883s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[20.883s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[20.883s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[20.883s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/_gkusv_driver_interface_s.ep.rosidl_typesupport_c.c
+[20.884s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/__init__.py
+[20.884s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/libgkusv_driver_interface__rosidl_generator_py.so
+[20.967s] Listing '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface'...
+[20.967s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/__init__.py'...
+[20.968s] Listing '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg'...
+[20.968s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/__init__.py'...
+[20.968s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_camera.py'...
+[20.968s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_compass.py'...
+[20.968s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_control.py'...
+[20.968s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_gps.py'...
+[20.969s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_imu.py'...
+[20.969s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/msg/_usv_water_sensor.py'...
+[20.969s] Listing '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/srv'...
+[20.969s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/srv/__init__.py'...
+[20.969s] Compiling '/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/srv/_set.py'...
+[20.978s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[20.979s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[20.979s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[20.980s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[20.980s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[20.981s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/local/lib/python3.10/dist-packages/gkusv_driver_interface/gkusv_driver_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[20.981s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_generator_py.so
+[20.981s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/gkusv_driver_interface/lib/libgkusv_driver_interface__rosidl_generator_py.so" to ""
+[20.981s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvCamera.idl
+[20.982s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvControl.idl
+[20.982s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvCompass.idl
+[20.982s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvImu.idl
+[20.982s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvGps.idl
+[20.983s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvWaterSensor.idl
+[20.983s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/srv/Set.idl
+[20.983s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvCamera.msg
+[20.983s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvControl.msg
+[20.984s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvCompass.msg
+[20.984s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvImu.msg
+[20.984s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvGps.msg
+[20.985s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/msg/UsvWaterSensor.msg
+[20.985s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/srv/Set.srv
+[20.985s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/srv/Set_Request.msg
+[20.985s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/srv/Set_Response.msg
+[20.986s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/ament_index/resource_index/package_run_dependencies/gkusv_driver_interface
+[20.986s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/ament_index/resource_index/parent_prefix_path/gkusv_driver_interface
+[20.986s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/ament_prefix_path.sh
+[20.987s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/ament_prefix_path.dsv
+[20.987s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/path.sh
+[20.987s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/environment/path.dsv
+[20.988s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/local_setup.bash
+[20.988s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/local_setup.sh
+[20.988s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/local_setup.zsh
+[20.989s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/local_setup.dsv
+[20.989s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.dsv
+[20.989s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/ament_index/resource_index/packages/gkusv_driver_interface
+[20.989s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_generator_cExport.cmake
+[20.989s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_generator_cExport-noconfig.cmake
+[20.990s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[20.990s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[20.990s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_generator_cppExport.cmake
+[20.991s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[20.991s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[20.991s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_introspection_cExport.cmake
+[20.991s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[20.992s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_cExport.cmake
+[20.992s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_cExport-noconfig.cmake
+[20.992s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_introspection_cppExport.cmake
+[20.993s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[20.993s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_cppExport.cmake
+[20.993s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[20.993s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_generator_pyExport.cmake
+[20.994s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/export_gkusv_driver_interface__rosidl_generator_pyExport-noconfig.cmake
+[20.994s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/rosidl_cmake-extras.cmake
+[20.994s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[20.995s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[20.995s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[20.995s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/ament_cmake_export_targets-extras.cmake
+[20.996s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[20.996s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[20.996s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interfaceConfig.cmake
+[20.996s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/cmake/gkusv_driver_interfaceConfig-version.cmake
+[20.997s] -- Installing: /home/globalkorea/ros2_ws/install/gkusv_driver_interface/share/gkusv_driver_interface/package.xml
+[21.001s] Invoked command in '/home/globalkorea/ros2_ws/build/gkusv_driver_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/gkusv_driver_interface

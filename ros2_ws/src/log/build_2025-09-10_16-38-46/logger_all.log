@@ -1,0 +1,197 @@
+[0.256s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'gkusv_msgs']
+[0.256s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['gkusv_msgs'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c1d2e71eaa0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c1d2e853a60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c1d2e853a60>>, mixin_verb=('build',))
+[0.717s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.717s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.717s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.717s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.717s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.717s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.717s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/globalkorea/ros2_ws/src'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.718s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'ignore'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'ignore_ament_install'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extensions ['colcon_pkg']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'colcon_pkg'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extensions ['colcon_meta']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'colcon_meta'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extensions ['ros']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'ros'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extensions ['cmake', 'python']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'cmake'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'python'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extensions ['python_setup_py']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2) by extension 'python_setup_py'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extension 'ignore'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extension 'ignore_ament_install'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extensions ['colcon_pkg']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extension 'colcon_pkg'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extensions ['colcon_meta']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extension 'colcon_meta'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extensions ['ros']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver) by extension 'ros'
+[0.762s] DEBUG:colcon.colcon_core.package_identification:Package 'globalkorea_usv_ros2/gkusv_driver' with type 'ros.ament_python' and name 'gkusv_driver'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extension 'ignore'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extension 'ignore_ament_install'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['colcon_pkg']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extension 'colcon_pkg'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['colcon_meta']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extension 'colcon_meta'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extensions ['ros']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(globalkorea_usv_ros2/gkusv_driver_interface) by extension 'ros'
+[0.765s] DEBUG:colcon.colcon_core.package_identification:Package 'globalkorea_usv_ros2/gkusv_driver_interface' with type 'ros.ament_cmake' and name 'gkusv_driver_interface'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extensions ['ignore', 'ignore_ament_install']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'ignore'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'ignore_ament_install'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extensions ['colcon_pkg']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'colcon_pkg'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extensions ['colcon_meta']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'colcon_meta'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extensions ['ros']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'ros'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extensions ['cmake', 'python']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'cmake'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'python'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extensions ['python_setup_py']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx) by extension 'python_setup_py'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extensions ['ignore', 'ignore_ament_install']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'ignore'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'ignore_ament_install'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extensions ['colcon_pkg']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'colcon_pkg'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extensions ['colcon_meta']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'colcon_meta'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extensions ['ros']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'ros'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extensions ['cmake', 'python']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'cmake'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'python'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extensions ['python_setup_py']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/images) by extension 'python_setup_py'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extension 'ignore'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extension 'ignore_ament_install'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extensions ['colcon_pkg']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extension 'colcon_pkg'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extensions ['colcon_meta']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extension 'colcon_meta'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extensions ['ros']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_gz) by extension 'ros'
+[0.770s] DEBUG:colcon.colcon_core.package_identification:Package 'vrx/vrx_gz' with type 'ros.ament_cmake' and name 'vrx_gz'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extension 'ignore'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extension 'ignore_ament_install'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extensions ['colcon_pkg']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extension 'colcon_pkg'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extensions ['colcon_meta']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extension 'colcon_meta'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extensions ['ros']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_ros) by extension 'ros'
+[0.773s] DEBUG:colcon.colcon_core.package_identification:Package 'vrx/vrx_ros' with type 'ros.ament_cmake' and name 'vrx_ros'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'ignore'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'ignore_ament_install'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extensions ['colcon_pkg']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'colcon_pkg'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extensions ['colcon_meta']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'colcon_meta'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extensions ['ros']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'ros'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extensions ['cmake', 'python']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'cmake'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'python'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extensions ['python_setup_py']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf) by extension 'python_setup_py'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extension 'ignore'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extension 'ignore_ament_install'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_pkg']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_pkg'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_meta']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_meta'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extensions ['ros']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/vrx_gazebo) by extension 'ros'
+[0.777s] DEBUG:colcon.colcon_core.package_identification:Package 'vrx/vrx_urdf/vrx_gazebo' with type 'ros.ament_cmake' and name 'vrx_gazebo'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extensions ['ignore', 'ignore_ament_install']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extension 'ignore'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extension 'ignore_ament_install'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extensions ['colcon_pkg']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extension 'colcon_pkg'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extensions ['colcon_meta']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extension 'colcon_meta'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extensions ['ros']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_description) by extension 'ros'
+[0.779s] DEBUG:colcon.colcon_core.package_identification:Package 'vrx/vrx_urdf/wamv_description' with type 'ros.ament_cmake' and name 'wamv_description'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extension 'ignore'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extension 'ignore_ament_install'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_pkg']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_pkg'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_meta']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_meta'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extensions ['ros']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(vrx/vrx_urdf/wamv_gazebo) by extension 'ros'
+[0.782s] DEBUG:colcon.colcon_core.package_identification:Package 'vrx/vrx_urdf/wamv_gazebo' with type 'ros.ament_cmake' and name 'wamv_gazebo'
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.782s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.782s] WARNING:colcon.colcon_core.package_selection:ignoring unknown package 'gkusv_msgs' in --packages-select
+[0.827s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gkusv_driver' in 'globalkorea_usv_ros2/gkusv_driver'
+[0.827s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gkusv_driver_interface' in 'globalkorea_usv_ros2/gkusv_driver_interface'
+[0.827s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vrx_gazebo' in 'vrx/vrx_urdf/vrx_gazebo'
+[0.827s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vrx_ros' in 'vrx/vrx_ros'
+[0.827s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'vrx_gz' in 'vrx/vrx_gz'
+[0.828s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'wamv_description' in 'vrx/vrx_urdf/wamv_description'
+[0.828s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'wamv_gazebo' in 'vrx/vrx_urdf/wamv_gazebo'
+[0.829s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.829s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.834s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/globalkorea/ros2_ws/install
+[0.836s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 289 installed packages in /opt/ros/humble
+[0.838s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.901s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.902s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.903s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.903s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.903s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.903s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.913s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.913s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.913s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.947s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.956s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/src/install/local_setup.ps1'
+[0.959s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/globalkorea/ros2_ws/src/install/_local_setup_util_ps1.py'
+[0.961s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/src/install/setup.ps1'
+[0.964s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/src/install/local_setup.sh'
+[0.965s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/globalkorea/ros2_ws/src/install/_local_setup_util_sh.py'
+[0.966s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/src/install/setup.sh'
+[0.969s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/src/install/local_setup.bash'
+[0.971s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/src/install/setup.bash'
+[0.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/globalkorea/ros2_ws/src/install/local_setup.zsh'
+[0.974s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/globalkorea/ros2_ws/src/install/setup.zsh'

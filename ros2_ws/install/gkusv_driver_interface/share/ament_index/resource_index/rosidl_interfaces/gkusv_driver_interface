@@ -1,0 +1,16 @@
+msg/UsvCamera.idl
+msg/UsvCamera.msg
+msg/UsvCompass.idl
+msg/UsvCompass.msg
+msg/UsvControl.idl
+msg/UsvControl.msg
+msg/UsvGps.idl
+msg/UsvGps.msg
+msg/UsvImu.idl
+msg/UsvImu.msg
+msg/UsvWaterSensor.idl
+msg/UsvWaterSensor.msg
+srv/Set.idl
+srv/Set.srv
+srv/Set_Request.msg
+srv/Set_Response.msg

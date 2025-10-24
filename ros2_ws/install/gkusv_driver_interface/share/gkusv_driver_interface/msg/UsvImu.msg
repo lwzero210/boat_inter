@@ -1,0 +1,5 @@
+std_msgs/Header header
+geometry_msgs/Vector3 euler_angles
+geometry_msgs/Vector3 acceleration
+geometry_msgs/Vector3 magnetic_field
+float32 temp

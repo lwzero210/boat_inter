@@ -1,0 +1,93 @@
+[0.027s] Invoking command in '/home/globalkorea/ros2_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_ros -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_ros
+[0.476s] -- The C compiler identification is GNU 11.4.0
+[0.487s] -- The CXX compiler identification is GNU 11.4.0
+[0.506s] -- Detecting C compiler ABI info
+[0.626s] -- Detecting C compiler ABI info - done
+[0.652s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.653s] -- Detecting C compile features
+[0.657s] -- Detecting C compile features - done
+[0.662s] -- Detecting CXX compiler ABI info
+[0.803s] -- Detecting CXX compiler ABI info - done
+[0.816s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.817s] -- Detecting CXX compile features
+[0.818s] -- Detecting CXX compile features - done
+[0.825s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.119s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.287s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.347s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.357s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.373s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.397s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.433s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.658s] -- Looking for gz-msgs9 -- found version 9.5.1
+[1.680s] -- Searching for dependencies of gz-msgs9
+[2.055s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.059s] -- Looking for gz-math7 -- found version 7.5.1
+[2.060s] -- Searching for dependencies of gz-math7
+[2.063s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.064s] -- Searching for dependencies of gz-utils2
+[2.075s] -- Checking for module 'tinyxml2'
+[2.097s] --   Found tinyxml2, version 9.0.0
+[2.167s] -- Looking for gz-transport12 -- found version 12.2.2
+[2.167s] -- Searching for dependencies of gz-transport12
+[2.205s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.213s] -- Checking for module 'libzmq >= 4'
+[2.238s] --   Found libzmq , version 4.3.4
+[2.291s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.307s] -- Checking for module 'uuid'
+[2.327s] --   Found uuid, version 2.37.2
+[2.373s] -- Found UUID: TRUE  
+[2.374s] -- Looking for gz-utils2 -- found version 2.2.1
+[2.374s] -- Searching for dependencies of gz-utils2
+[2.374s] -- Searching for <gz-utils2> component [cli]
+[2.380s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[2.380s] -- Searching for dependencies of gz-utils2-cli
+[2.382s] -- Looking for gz-msgs9 -- found version 9.5.1
+[2.388s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[2.555s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.562s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.734s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.778s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.848s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.868s] -- Found Threads: TRUE  
+[3.101s] -- Found ros_gz_interfaces: 0.244.11 (/opt/ros/humble/share/ros_gz_interfaces/cmake)
+[3.332s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.531s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[3.564s] -- Found tf2_msgs: 0.25.7 (/opt/ros/humble/share/tf2_msgs/cmake)
+[3.842s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.232s] -- Configuring done
+[4.256s] -- Generating done
+[4.265s] -- Build files have been written to: /home/globalkorea/ros2_ws/build/vrx_ros
+[4.304s] Invoked command in '/home/globalkorea/ros2_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake /home/globalkorea/ros2_ws/src/vrx/vrx_ros -DCMAKE_INSTALL_PREFIX=/home/globalkorea/ros2_ws/install/vrx_ros
+[4.306s] Invoking command in '/home/globalkorea/ros2_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_ros -- -j4 -l4
+[4.453s] [ 25%] [32mBuilding CXX object CMakeFiles/optical_frame_publisher.dir/src/optical_frame_publisher.cc.o[0m
+[4.457s] [ 50%] [32mBuilding CXX object CMakeFiles/pose_tf_broadcaster.dir/src/pose_tf_broadcaster.cc.o[0m
+[23.965s] [ 75%] [32m[1mLinking CXX executable pose_tf_broadcaster[0m
+[24.808s] [ 75%] Built target pose_tf_broadcaster
+[29.927s] [100%] [32m[1mLinking CXX executable optical_frame_publisher[0m
+[30.931s] [100%] Built target optical_frame_publisher
+[30.945s] Invoked command in '/home/globalkorea/ros2_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --build /home/globalkorea/ros2_ws/build/vrx_ros -- -j4 -l4
+[30.947s] Invoking command in '/home/globalkorea/ros2_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_ros
+[30.956s] -- Install configuration: ""
+[30.957s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/lib/vrx_ros/optical_frame_publisher
+[30.964s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/vrx_ros/lib/vrx_ros/optical_frame_publisher" to ""
+[30.964s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/lib/vrx_ros/pose_tf_broadcaster
+[30.969s] -- Set runtime path of "/home/globalkorea/ros2_ws/install/vrx_ros/lib/vrx_ros/pose_tf_broadcaster" to ""
+[30.969s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/launch
+[30.969s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/launch/monitor_sim.py
+[30.970s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/ament_index/resource_index/package_run_dependencies/vrx_ros
+[30.970s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/ament_index/resource_index/parent_prefix_path/vrx_ros
+[30.971s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/environment/ament_prefix_path.sh
+[30.971s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/environment/ament_prefix_path.dsv
+[30.971s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/environment/path.sh
+[30.971s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/environment/path.dsv
+[30.971s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/local_setup.bash
+[30.971s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/local_setup.sh
+[30.972s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/local_setup.zsh
+[30.972s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/local_setup.dsv
+[30.972s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.dsv
+[30.972s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/ament_index/resource_index/packages/vrx_ros
+[30.972s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/cmake/vrx_rosConfig.cmake
+[30.973s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/cmake/vrx_rosConfig-version.cmake
+[30.973s] -- Installing: /home/globalkorea/ros2_ws/install/vrx_ros/share/vrx_ros/package.xml
+[30.976s] Invoked command in '/home/globalkorea/ros2_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/globalkorea/ros2_ws/install/gkusv_driver:/opt/ros/humble /usr/bin/cmake --install /home/globalkorea/ros2_ws/build/vrx_ros

@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from gkusv_driver_interface/msg/UsvWaterSensor.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module gkusv_driver_interface {
+  module msg {
+    @verbatim (language="comment", text=
+      "UsvWaterSensor.msg" "\n"
+      "수질 센서 데이터 메시지")
+    struct UsvWaterSensor {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "센서 값들 (읽기 실패 시 -1.0)" "\n"
+        "pH 값")
+      float ph;
+
+      @verbatim (language="comment", text=
+        "전압 (mV)")
+      float voltage;
+
+      @verbatim (language="comment", text=
+        "수온 (°C)")
+      float temperature;
+
+      @verbatim (language="comment", text=
+        "염분도 (PSU)")
+      float salinity;
+
+      @verbatim (language="comment", text=
+        "압력 (mbar)")
+      float pressure_mbar;
+
+      @verbatim (language="comment", text=
+        "전도도 (μS/c)")
+      float conductivity;
+    };
+  };
+};

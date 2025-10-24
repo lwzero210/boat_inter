@@ -1,0 +1,37 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_camera__type_support_c.cpp.o"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_camera__type_support_c.cpp.o.d"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_compass__type_support_c.cpp.o"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_compass__type_support_c.cpp.o.d"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_control__type_support_c.cpp.o"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_control__type_support_c.cpp.o.d"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_gps__type_support_c.cpp.o"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_gps__type_support_c.cpp.o.d"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_imu__type_support_c.cpp.o"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_imu__type_support_c.cpp.o.d"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support_c.cpp.o"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support_c.cpp.o.d"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/srv/detail/set__type_support_c.cpp.o"
+  "CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/gkusv_driver_interface/srv/detail/set__type_support_c.cpp.o.d"
+  "libgkusv_driver_interface__rosidl_typesupport_fastrtps_c.pdb"
+  "libgkusv_driver_interface__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_camera__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_camera__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_compass__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_compass__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_control__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_control__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_gps__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_gps__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_imu__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_imu__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_water_sensor__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/msg/detail/usv_water_sensor__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/srv/detail/set__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/gkusv_driver_interface/srv/detail/set__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/gkusv_driver_interface__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,12 @@
+{
+  "package_name": "gkusv_driver_interface",
+  "non_idl_tuples": [
+    "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface:msg/UsvCamera.msg",
+    "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface:msg/UsvControl.msg",
+    "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface:msg/UsvCompass.msg",
+    "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface:msg/UsvImu.msg",
+    "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface:msg/UsvGps.msg",
+    "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface:msg/UsvWaterSensor.msg",
+    "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver_interface:srv/Set.srv"
+  ]
+}
