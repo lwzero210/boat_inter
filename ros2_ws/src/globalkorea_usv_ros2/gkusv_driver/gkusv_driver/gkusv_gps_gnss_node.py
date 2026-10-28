@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Header
-from gkusv_driver_interface.msg import UsvGps
+from gkusv_driver_interface.msg import UsvGps  # your_package는 실제 패키지 이름으로 변경해야 함
 import serial
 import time
 from pyubx2 import UBXReader, UBXMessage, SET
@@ -26,13 +26,11 @@ class NTRIPClient:
         self.logger = logger
         self.rtcm_count = 0
         self.last_rtcm_time = time.time()
-        self.connected = False  # 추가
 
     def connect(self):
         try:
             self.logger.info(f"Connecting to NTRIP server {self.host}:{self.port}...")
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            self.socket.settimeout(10)  # 타임아웃 추가
             self.socket.connect((self.host, self.port))
             self.logger.info("Socket connection established")
 
@@ -65,41 +63,29 @@ class NTRIPClient:
                 self.logger.info(f"Received header: {line}")
 
             if any("200 OK" in header for header in headers):
-                self.logger.info("NTRIP connection successful!")
+                self.logger.info("✅ NTRIP connection successful!")
                 self.socket.setblocking(False)
-                self.connected = True  # 추가
                 return True
             else:
-                self.logger.error("NTRIP connection failed - Authentication error or invalid mountpoint")
-                self.connected = False  # 추가
+                self.logger.error("❌ NTRIP connection failed - Authentication error or invalid mountpoint")
                 return False
 
         except Exception as e:
-            self.logger.error(f"NTRIP connection failed: {str(e)}")
-            self.connected = False  # 추가
-            if self.socket:
-                try:
-                    self.socket.close()
-                except:
-                    pass
-                self.socket = None
+            self.logger.error(f"❌ NTRIP connection failed: {str(e)}")
             return False
 
     def read_rtcm(self):
-        if not self.connected:  # 수정
-            return None
-            
         try:
             ready = select.select([self.socket], [], [], 1.0)
             if not ready[0]:
+                # 마지막 RTCM 데이터 수신 후 5초가 지났다면 경고
                 if time.time() - self.last_rtcm_time > 5:
-                    self.logger.warning("No RTCM data received for 5 seconds")
+                    self.logger.warning("⚠️ No RTCM data received for 5 seconds")
                 return None
 
             data = self.socket.recv(1024)
             if not data:
                 self.logger.warning("Server closed connection")
-                self.connected = False  # 추가
                 return None
 
             rtcm_messages = []
@@ -121,7 +107,7 @@ class NTRIPClient:
             if rtcm_messages:
                 self.rtcm_count += len(rtcm_messages)
                 self.last_rtcm_time = time.time()
-                self.logger.info(f"Received {len(rtcm_messages)} RTCM messages (Total: {self.rtcm_count})")
+                self.logger.info(f"📡 Received {len(rtcm_messages)} RTCM messages (Total: {self.rtcm_count})")
                 return b''.join(rtcm_messages)
             return None
 
@@ -129,11 +115,9 @@ class NTRIPClient:
             if e.errno in (errno.EAGAIN, errno.EWOULDBLOCK):
                 return None
             self.logger.error(f"RTCM read error: {str(e)}")
-            self.connected = False  # 추가
             return None
 
     def close(self):
-        self.connected = False  # 추가
         if self.socket:
             try:
                 self.socket.close()
@@ -153,7 +137,7 @@ class ZEDF9P_RTK_Node(Node):
         self.declare_parameter('ntrip_mountpoint', 'YECH-RTCM31')
         self.declare_parameter('ntrip_username', 'tomaqui@naver.com')
         self.declare_parameter('ntrip_password', 'gnss')
-        self.declare_parameter('publish_rate', 1.0)
+        self.declare_parameter('publish_rate', 1.0)  # Hz
 
         # Get parameters
         self.port = self.get_parameter('port').value
@@ -173,12 +157,6 @@ class ZEDF9P_RTK_Node(Node):
         self.running = False
         self.ntrip_client = None
         self.ntrip_thread = None
-        
-        # NTRIP 재연결 관련 변수 추가
-        self.ntrip_connected = False
-        self.ntrip_retry_thread = None
-        self.ntrip_retry_count = 0
-        
         self.fix_type_names = {
             0: "No Fix",
             1: "Dead Reckoning",
@@ -197,15 +175,10 @@ class ZEDF9P_RTK_Node(Node):
         self.initialize()
 
     def initialize(self):
-        # 기존 구조 유지하되 NTRIP 실패 시에도 GPS 시작하도록 수정
         if self.connect():
             if self.enable_nav_pvt():
-                # NTRIP 클라이언트 시작 (실패해도 계속 진행)
-                self.start_ntrip_client()
-                # NTRIP 재시도 스레드 시작 (추가)
-                self.start_ntrip_retry_thread()
-                # GPS 모니터링은 항상 시작
-                self.start_monitoring()
+                if self.start_ntrip_client():
+                    self.start_monitoring()
 
     def connect(self):
         try:
@@ -217,10 +190,10 @@ class ZEDF9P_RTK_Node(Node):
                 stopbits=serial.STOPBITS_ONE,
                 timeout=1
             )
-            self.get_logger().info(f"Connected to {self.port} at {self.baud_rate} baud")
+            self.get_logger().info(f"✅ Connected to {self.port} at {self.baud_rate} baud")
             return True
         except serial.SerialException as e:
-            self.get_logger().error(f"Connection failed: {str(e)}")
+            self.get_logger().error(f"❌ Connection failed: {str(e)}")
             return False
 
     def _send_ubx_message(self, msg):
@@ -239,125 +212,40 @@ class ZEDF9P_RTK_Node(Node):
             payload = bytearray([0x01, 0x07, 0x01])
             msg = UBXMessage(0x06, 0x01, SET, payload=payload)
             if self._send_ubx_message(msg):
-                self.get_logger().info("NAV-PVT message enabled")
+                self.get_logger().info("✅ NAV-PVT message enabled")
                 return True
             return False
         except Exception as e:
-            self.get_logger().error(f"Failed to enable NAV-PVT: {str(e)}")
+            self.get_logger().error(f"❌ Failed to enable NAV-PVT: {str(e)}")
             return False
 
     def start_ntrip_client(self):
-        # 수정: 실패해도 True 반환하여 GPS 모니터링이 시작되도록 함
-        try:
-            self.ntrip_client = NTRIPClient(
-                self.ntrip_host,
-                self.ntrip_port,
-                self.ntrip_mountpoint,
-                self.ntrip_username,
-                self.ntrip_password,
-                self.get_logger()
-            )
-            if self.ntrip_client.connect():
-                self.ntrip_connected = True
-                self.ntrip_thread = threading.Thread(target=self._ntrip_worker)
-                self.ntrip_thread.daemon = True
-                self.ntrip_thread.start()
-                self.get_logger().info("NTRIP client started successfully")
-            else:
-                self.ntrip_connected = False
-                self.get_logger().warning("Initial NTRIP connection failed, will retry in background")
-        except Exception as e:
-            self.ntrip_connected = False
-            self.get_logger().error(f"NTRIP client initialization error: {str(e)}")
-        
-        return True  # 항상 True 반환
-
-    def start_ntrip_retry_thread(self):
-        # 추가: NTRIP 재시도 스레드
-        if not self.ntrip_connected:
-            self.ntrip_retry_thread = threading.Thread(target=self._ntrip_retry_worker)
-            self.ntrip_retry_thread.daemon = True
-            self.ntrip_retry_thread.start()
-            self.get_logger().info("NTRIP retry thread started")
-
-    def _ntrip_retry_worker(self):
-        # 추가: NTRIP 재연결 워커
-        self.get_logger().info("NTRIP retry worker started")
-        
-        while rclpy.ok():
-            try:
-                # 연결되지 않은 경우에만 재시도
-                if not self.ntrip_connected:
-                    self.ntrip_retry_count += 1
-                    self.get_logger().info(f"NTRIP reconnection attempt #{self.ntrip_retry_count}")
-                    
-                    # 기존 클라이언트 정리
-                    if self.ntrip_client:
-                        try:
-                            self.ntrip_client.close()
-                        except:
-                            pass
-                    
-                    # 새 클라이언트 생성 및 연결 시도
-                    self.ntrip_client = NTRIPClient(
-                        self.ntrip_host,
-                        self.ntrip_port,
-                        self.ntrip_mountpoint,
-                        self.ntrip_username,
-                        self.ntrip_password,
-                        self.get_logger()
-                    )
-                    
-                    if self.ntrip_client.connect():
-                        self.ntrip_connected = True
-                        self.get_logger().info(f"NTRIP reconnection successful! (attempt #{self.ntrip_retry_count})")
-                        
-                        # 새 워커 스레드 시작
-                        if self.ntrip_thread is None or not self.ntrip_thread.is_alive():
-                            self.ntrip_thread = threading.Thread(target=self._ntrip_worker)
-                            self.ntrip_thread.daemon = True
-                            self.ntrip_thread.start()
-                            self.get_logger().info("NTRIP worker restarted")
-                        
-                        # 재연결 성공 시 이 스레드 종료
-                        break
-                    else:
-                        self.get_logger().warning(f"NTRIP reconnection failed (attempt #{self.ntrip_retry_count}), retrying in 15 seconds...")
-                        time.sleep(15)
-                
-            except Exception as e:
-                self.get_logger().error(f"NTRIP retry worker error: {str(e)}")
-                time.sleep(15)
+        self.ntrip_client = NTRIPClient(
+            self.ntrip_host,
+            self.ntrip_port,
+            self.ntrip_mountpoint,
+            self.ntrip_username,
+            self.ntrip_password,
+            self.get_logger()
+        )
+        if self.ntrip_client.connect():
+            self.ntrip_thread = threading.Thread(target=self._ntrip_worker)
+            self.ntrip_thread.daemon = True
+            self.ntrip_thread.start()
+            return True
+        return False
 
     def _ntrip_worker(self):
-        # 수정: 연결 상태 체크 추가
         self.running = True
         while self.running and rclpy.ok():
-            try:
-                if self.ntrip_client and self.ntrip_client.connected:
-                    rtcm_data = self.ntrip_client.read_rtcm()
-                    if rtcm_data:
-                        self.serial_port.write(rtcm_data)
-                        self.serial_port.flush()
-                else:
-                    # 연결이 끊어진 경우
-                    self.get_logger().warning("NTRIP connection lost, will reconnect")
-                    self.ntrip_connected = False
-                    # 재시도 스레드 다시 시작
-                    if not self.ntrip_retry_thread or not self.ntrip_retry_thread.is_alive():
-                        self.start_ntrip_retry_thread()
-                    break
-                    
-            except Exception as e:
-                self.get_logger().error(f"NTRIP worker error: {str(e)}")
-                self.ntrip_connected = False
-                break
-                
+            rtcm_data = self.ntrip_client.read_rtcm()
+            if rtcm_data:
+                self.serial_port.write(rtcm_data)
+                self.serial_port.flush()
             time.sleep(0.1)
 
     def start_monitoring(self):
         self.running = True
-        self.get_logger().info("Starting GPS monitoring...")
         ubr = UBXReader(self.serial_port)
         
         while self.running and rclpy.ok():
@@ -374,30 +262,45 @@ class ZEDF9P_RTK_Node(Node):
                     
                     fix_type = getattr(parsed_data, 'fixType', 0)
                     msg.status = fix_type
+                    # msg.latitude = getattr(parsed_data, 'lat', 0) / 1e7
+                    # msg.longitude = getattr(parsed_data, 'lon', 0) / 1e7
                     msg.latitude = getattr(parsed_data, 'lat', 0)
                     msg.longitude = getattr(parsed_data, 'lon', 0)
                     msg.height = getattr(parsed_data, 'height', 0) / 1000.0
                     msg.accuracy = getattr(parsed_data, 'hAcc', 0) / 1000.0
                     msg.cs = float(getattr(parsed_data, 'carrSoln', 0))
 
-                    # 로깅에 NTRIP 상태 추가
-                    if fix_type != self.last_status or self.msg_count % 20 == 0:
+                    # Only log if status changes or every 10 messages
+                    if fix_type != self.last_status or self.msg_count % 10 == 0:
                         status_str = self.fix_type_names.get(fix_type, "Unknown")
-                        ntrip_status = "Connected" if self.ntrip_connected else "Disconnected"
                         self.get_logger().info(f"""
-RTK Status Update (msg #{self.msg_count}):
+📍 RTK Status Update (msg #{self.msg_count}):
 Fix Type: {status_str}
-Position: {msg.latitude}N, {msg.longitude}E
+Position: {msg.latitude}°N, {msg.longitude}°E
 Height: {msg.height:.2f}m
 Accuracy: {msg.accuracy:.3f}m
-NTRIP: {ntrip_status} (retry #{self.ntrip_retry_count})
+Carrier Solution: {msg.cs}
 """)
                         self.last_status = fix_type
                     
                     self.publisher.publish(msg)
 
             except Exception as e:
-                self.get_logger().error(f"Monitoring error: {str(e)}")
+                # 에러 발생시에도 기본값 전송
+                # msg = UsvGps()
+                # msg.header = Header()
+                # msg.header.stamp = self.get_clock().now().to_msg()
+                # msg.header.frame_id = "rtk"
+                
+                # msg.status = 0
+                # msg.latitude = 0.0
+                # msg.longitude = 0.0
+                # msg.height = 0.0
+                # msg.accuracy = 0.0
+                # msg.cs = 0.0
+                
+                # self.publisher.publish(msg)
+                self.get_logger().error(f"❌ Monitoring error: {str(e)}")
                 time.sleep(0.1)
 
     def destroy_node(self):

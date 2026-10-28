@@ -27,25 +27,4 @@ def generate_launch_description():
             name='imu_node',
             output='screen'
         ),
-        Node(
-            package='gkusv_driver',
-            executable='gkusv_water_sensor_node',
-            name='water_sensor_node',
-            output='screen',
-            parameters=[
-                {'device': '/dev/ttyUSB2'},
-                {'slave_address': 20},
-                {'publish_rate': 2.0}
-            ]
-        ),
-        Node(
-            package='gkusv_driver',
-            executable='gkusv_winch_controller_node',
-            name='winch_controller',
-            output='screen',
-            parameters=[
-                {'port': '/dev/ttyACM3'},
-                {'simulation_mode': False}
-            ]
-        ),
     ])

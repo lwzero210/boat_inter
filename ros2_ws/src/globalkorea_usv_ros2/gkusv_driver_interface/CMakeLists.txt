@@ -44,7 +44,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/UsvCompass.msg"
   "msg/UsvImu.msg"
   "msg/UsvGps.msg"
-  "msg/UsvWaterSensor.msg"
   "srv/Set.srv"
   DEPENDENCIES geometry_msgs std_msgs sensor_msgs
 )
