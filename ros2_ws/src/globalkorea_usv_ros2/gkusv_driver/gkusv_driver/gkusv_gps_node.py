@@ -15,7 +15,7 @@ class ZEDF9P_RTK(Node):
     def __init__(self):
         super().__init__('zedf9p_rtk_node')
         self.publisher_ = self.create_publisher(UsvGps, 'gps_data', 10)
-        self.port = '/dev/ttyACM1'
+        self.port = '/dev/ttyACM0'
         self.baud_rate = 115200
         self.serial_port = None
         self.running = False

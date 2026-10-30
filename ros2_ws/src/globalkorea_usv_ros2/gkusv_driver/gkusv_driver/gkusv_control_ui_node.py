@@ -10,7 +10,7 @@ import threading
 import serial
 import pandas as pd
 
-csv_file = "/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver/gkusv_driver/data/boat_control_setting.csv"
+csv_file = "/home/jeyoon/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver/gkusv_driver/data/boat_control_setting.csv"
 
 class ROS2Publisher(Node):
     def __init__(self):

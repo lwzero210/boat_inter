@@ -27,7 +27,7 @@ class GPSIMUDataSaver(Node):
         self.get_logger().info('Datasave node has started.')
 
         self.current_time_save = datetime.now().strftime("%Y%m%d_%H%M%S")
-        self.file_path = f'/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver/gkusv_driver/data/concat_data_{self.current_time_save}.csv'
+        self.file_path = f'/home/jeyoon/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver/gkusv_driver/data/concat_data_{self.current_time_save}.csv'
         # CSV 파일 열기
         self.csv_file = open(self.file_path, mode='a', newline='')
         self.csv_writer = csv.writer(self.csv_file)

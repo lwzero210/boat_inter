@@ -66,7 +66,7 @@ class PWMControlNode(Node):
             self.boat_number = int(data[0])
             self.x_voltage_save = float(data[1])
             self.y_voltage_save = float(data[2])
-            csv_file = '/home/globalkorea/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver/gkusv_driver/data/boat_control_setting.csv'
+            csv_file = '/home/jeyoon/ros2_ws/src/globalkorea_usv_ros2/gkusv_driver/gkusv_driver/data/boat_control_setting.csv'
             if os.path.isfile(csv_file):
                 with open(csv_file, mode='r', newline='') as file:
                     reader = csv.DictReader(file)
